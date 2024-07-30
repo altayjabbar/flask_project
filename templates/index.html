@@ -1,8 +1,12 @@
-<h1>Hello Everyone</h1>
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Hello Everyone</h1>
 
-<p>this is my firstname {{first_name}}</p>
+    <p>this is my firstname {{first_name}}</p>
 
-<p>this is my firstname {{stuff}}</p>
-{% for pizza in favorite_pizza %}
-    <p>{{pizza}}</p>
-{% endfor %}
+    <p>this is my firstname {{stuff}}</p>
+    {% for pizza in favorite_pizza %}
+        <p>{{pizza}}</p>
+    {% endfor %}
+
+{% endblock %}
