@@ -19,6 +19,7 @@
                 {{ our_user.name }}</a> 
                 - {{ our_user.email }}
                 - {{ our_user.favorite_color }}
+                -<a href="{{ url_for('delete', id=our_user.id) }}">Delete</a>
             </td>
     </tr>
     {% endfor %}
@@ -56,6 +57,7 @@
                 {{ our_user.name }}</a> 
                 - {{ our_user.email }}
                 - {{ our_user.favorite_color }}
+                -<a href="{{ url_for('delete', id=our_user.id) }}">Delete</a>
 
             </td>
     </tr>
